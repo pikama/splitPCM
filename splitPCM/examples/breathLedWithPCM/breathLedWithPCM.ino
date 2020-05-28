@@ -24,7 +24,7 @@ void loop() {
     brightness = i * fadeAmount;
     analogWrite(ledPin, brightness);
   }
-  if (remain > 1) {
+  if (remain > 0) {
     playback(soundData, splitNo * eachSize, splitNo * eachSize + remain - 1);
   }
   stopPlay();
